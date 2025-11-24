@@ -3,27 +3,20 @@
 ConnectHere is a full-stack web application that centralizes **campus communication and collaboration** for students, faculty, and administrators.  
 
 It replaces scattered WhatsApp groups, emails, and notice boards with a single, secure, role-based platform.
-
 > **Backend:** Java, Spring Boot, PostgreSQL, JWT, Gmail SMTP  
 > **Frontend:** React, Vite
-
----
 
 ## 🎯 Problem & Solution
 
 ### Problem
-
 On most campuses:
-
 - Important announcements are split across WhatsApp, email, and random messages.  
 - Students miss deadlines and events.  
 - Faculty has no single channel to share course updates.  
 - Admins cannot easily broadcast verified information to everyone.
 
 ### Solution
-
 **ConnectHere** provides a single portal where:
-
 - **Admins** manage users and publish official campus-wide announcements.  
 - **Faculty** share course updates, resources, and event information.  
 - **Students** see a personalized feed of announcements and resources based on their role and department.
@@ -32,8 +25,6 @@ The system is designed using **Information Systems Design & Development** princi
 - clear separation of frontend, backend and database
 - role-based access control
 - modular services (auth, announcements, events, resources)
-
----
 
 ## 👥 User Roles & Capabilities
 
@@ -52,8 +43,6 @@ The system is designed using **Information Systems Design & Development** princi
 - Register and log in securely.
 - View a personalized **Campus Feed** with relevant announcements.
 - Access shared resources and upcoming events (planned).
-
----
 
 ## ✨ Current Features
 
@@ -81,8 +70,6 @@ The system is designed using **Information Systems Design & Development** princi
 - Spring Boot Mail configured for **Gmail SMTP**.
 - Email service layer in place for sending OTP or verification emails.
 - Secrets handled safely (see **🔐 Security & Secrets** below).
-
----
 
 ## 🧱 Tech Stack
 
@@ -113,8 +100,6 @@ The system is designed using **Information Systems Design & Development** princi
 - pgAdmin for PostgreSQL
 - VS Code
 - Postman / REST client (for API testing)
-
----
 
 ## 🏗️ Project Structure
 
@@ -156,7 +141,7 @@ ConnectHere/
       apiClient.js
       App.jsx
       main.jsx
-🧩 High-Level Architecture
+##🧩 High-Level Architecture
 text
 Copy code
 [ React Frontend (Vite) ]
@@ -172,7 +157,7 @@ Frontend and backend are decoupled and can be deployed separately.
 
 Authentication is stateless using JWT tokens.
 
-🗄️ Database (PostgreSQL)
+##🗄️ Database (PostgreSQL)
 Example configuration (defaults) used for local development:
 Host: localhost
 Port: 5432
@@ -181,7 +166,7 @@ User: postgres (or a dedicated user)
 Password: your local Postgres password
 Spring JPA auto-creates tables from entities such as User, Role, Announcement, Resource, Channel, Event, Comment, etc.
 
-🚀 Getting Started (Local Development)
+## Getting Started (Local Development)
 1. Prerequisites
 Java 17+
 Maven 3+
@@ -287,7 +272,7 @@ Copy code
 npm run dev
 Open the URL shown by Vite (usually http://localhost:5173).
 
-Login / Register
+##Login / Register
 
 Use the registration page to create a new user.
 Role-based behavior (Admin/Faculty/Student) is applied based on how the backend initializes roles and assigns them during registration/seed data.
@@ -315,7 +300,7 @@ npm install
 npm run dev -- --host 0.0.0.0 --port 5173
 GitHub will expose forwarded ports that you can open directly from the browser.
 
-🔐 Security & Secrets
+##🔐 Security & Secrets
 Never commit real secrets (DB passwords, Gmail app passwords, JWT secrets) to Git.
 
 This project uses the pattern:
@@ -334,7 +319,7 @@ Remove them from config.
 
 Mark them as revoked in any secret-scanning tools (e.g., GitGuardian).
 
-📚 For Academic / ISDD Documentation
+##📚 For Academic / ISDD Documentation
 You can describe ConnectHere in your Information Systems Design & Development report as:
 
 A three-tier architecture (Presentation, Application, Data).
@@ -366,16 +351,18 @@ dto – request/response objects
 
 ✅ Project ready for local development and GitHub hosting.
 
-🚧 Upcoming:
+## 🚧 Upcoming:
 Full event management module
 Discussion/Q&A module
 Admin analytics dashboard
 
-Screenshots:
-ConnectHere Login
-<img width="876" height="509" alt="connecthere login" src="https://github.com/user-attachments/assets/d35d304c-6cc7-4983-a3f3-f9b01105aad8" />
-ConnectHere Register
-<img width="888" height="508" alt="co nnecthere register" src="https://github.com/user-attachments/assets/73f7ed5c-e7c0-4ec9-9694-13460665dd46" />
+## 📸 Screenshots
+
+### Login Page
+![Login Page](./screenshots/login.png)
+
+### Student Feed
+![Register Page](./screenshots/feed.png)
 
 
 
