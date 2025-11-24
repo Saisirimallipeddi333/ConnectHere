@@ -141,6 +141,7 @@ ConnectHere/
       apiClient.js
       App.jsx
       main.jsx
+---
 ##🧩 High-Level Architecture
 text
 Copy code
