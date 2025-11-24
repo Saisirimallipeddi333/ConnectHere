@@ -355,9 +355,9 @@ dto – request/response objects
 ✅ Project ready for local development and GitHub hosting.
 
 ## 🚧 Upcoming:
-Full event management module
-Discussion/Q&A module
-Admin analytics dashboard
+-Full event management module
+-Discussion/Q&A module
+-Admin analytics dashboard
 
 ## 📸 Screenshots
 
