@@ -364,7 +364,7 @@ dto – request/response objects
 ### Login Page
 ![Login Page](./Screenshots/connecthere%20login.png)
 
-### Student Feed
+### Sign Up Page
 ![Student Feed](./Screenshots/connecthere%20register.png)
 
 
